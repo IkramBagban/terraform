@@ -1,3 +1,5 @@
+
+
 terraform {
   required_providers {
     aws = {
@@ -10,10 +12,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
-resource "aws_instance" "name" {
+resource "aws_instance" "MyInstance" {
   ami           = "ami-020cba7c55df1f615"
   instance_type = "t2.micro"
 
