@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Learn - Master Infrastructure as Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Terraform Learn</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#tutorials" class="nav-link">Tutorials</a>
+                <a href="#docs" class="nav-link">Docs</a>
+                <a href="#community" class="nav-link">Community</a>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Master <span class="gradient-text">Infrastructure as Code</span> with Terraform
+                    </h1>
+                    <p class="hero-description">
+                        Learn to provision, manage, and version your infrastructure across any cloud provider. 
+                        From beginner tutorials to advanced patterns, master the tools that power modern DevOps.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large">Start Learning Free</button>
+                        <button class="btn btn-secondary btn-large">View Curriculum</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Interactive Labs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100k+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">main.tf</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-keyword">resource</span>
+                                <span class="code-string">"aws_instance"</span>
+                                <span class="code-string">"web"</span>
+                                <span class="code-bracket">{</span>
+                            </div>
+                            <div class="code-line code-indent">
+                                <span class="code-property">ami</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">"ami-0c55b159cbfafe1d0"</span>
+                            </div>
+                            <div class="code-line code-indent">
+                                <span class="code-property">instance_type</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">"t3.micro"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element aws"></div>
+                        <div class="floating-element gcp"></div>
+                        <div class="floating-element azure"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Terraform Learn?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Hands-on Learning</h3>
+                        <p>Practice with real cloud environments. No setup required - start coding immediately in our interactive labs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Project-Based</h3>
+                        <p>Build real infrastructure projects that you can showcase. From simple VMs to complex multi-cloud architectures.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Industry Experts</h3>
+                        <p>Learn from HashiCorp certified instructors and DevOps professionals with years of production experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Infrastructure Skills?</h2>
+                    <p>Join thousands of developers already mastering Infrastructure as Code</p>
+                    <button class="btn btn-primary btn-large">Start Your Journey Today</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon"></div>
+                        <span>Terraform Learn</span>
+                    </div>
+                    <p>Master Infrastructure as Code with hands-on tutorials and expert guidance.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <a href="#">Getting Started</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Advanced Topics</a>
+                        <a href="#">Best Practices</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Community</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Support</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Terraform Learn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
