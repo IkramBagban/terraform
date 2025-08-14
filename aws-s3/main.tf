@@ -14,9 +14,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
+resource "random_id" "rand_id" {
+  byte_length = 8
+}
+
 
 resource "aws_s3_bucket" "demo-aws_s3_bucket" {
-  bucket = "demo-aws-unique-s3-bucket-3123"
+  bucket = "demo-aws-unique-s3-bucket-${random_id.rand_id.hex}"
 }
 
 resource "aws_s3_object" "bucket-data" {
