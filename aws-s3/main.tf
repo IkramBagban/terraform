@@ -18,3 +18,9 @@ provider "aws" {
 resource "aws_s3_bucket" "demo-aws_s3_bucket" {
   bucket = "demo-aws-unique-s3-bucket-3123"
 }
+
+resource "aws_s3_object" "bucket-data" {
+    bucket = aws_s3_bucket.demo-aws_s3_bucket.bucket
+    key    = "./data.txt"
+    source = "data.txt"
+}
